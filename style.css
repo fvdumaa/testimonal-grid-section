@@ -123,3 +123,45 @@ section.daniel h2 {
   background-color: #19202d;
   color: #ecf2f8;
 }
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    padding: 10rem;
+  }
+
+  section {
+    margin-bottom: 0;
+  }
+
+  main {
+    display: grid;
+    column-gap: 1.875rem;
+    row-gap: 1.5rem;
+    grid-template-areas:
+      "daniel daniel jonathon kira"
+      "jeanette patrick patrick kira ";
+  }
+  .daniel {
+    grid-area: daniel;
+  }
+  .jonathan {
+    grid-area: jonathon;
+  }
+  .jeanette {
+    grid-area: jeanette;
+  }
+  .patrick {
+    grid-area: patrick;
+  }
+  .kira {
+    grid-area: kira;
+  }
+
+  section.daniel h2 {
+    margin-bottom: 1rem;
+  }
+}
